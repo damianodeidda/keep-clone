@@ -1,0 +1,91 @@
+.input {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 2rem;
+  background-color: var(--white-keep);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-keep);
+  border: 0.3px solid var(--light-grey-keep);
+  border-radius: 15px;
+  padding: 0 0.3rem;
+  box-shadow: 0 1px 5px var(--dark-grey-keep);
+  color: var(--black-keep);
+}
+
+form:hover {
+  box-shadow: 0 2px 8px var(--dark-grey-keep);
+  transition: all 200ms ease-in;
+}
+
+form input,
+form textarea {
+  background-color: var(--white-keep);
+  color: var(--black-keep);
+  width: 35rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+form :-ms-input-placeholder {
+  color: var(--light-grey-keep);
+}
+
+@media (max-width: 730px) {
+  form input,
+  form textarea {
+    width: 24rem;
+  }
+
+  form {
+    width: 27rem;
+  }
+}
+
+@media (max-width: 570px) {
+  form input,
+  form textarea {
+    width: 20rem;
+  }
+
+  form {
+    width: 22rem;
+  }
+}
+
+form input {
+  font-size: 1.2rem;
+}
+
+form button {
+  width: 6rem;
+  position: relative;
+  right: 0;
+  background-color: var(--white-keep);
+  color: var(--dark-grey-keep);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+form button:hover {
+  background-color: var(--light-grey-keep);
+  color: var(--black-keep);
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}

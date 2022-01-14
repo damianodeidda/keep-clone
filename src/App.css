@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --desktop-padding: 0.2rem 1.2rem;
+  --mobile-padding: 1rem 2rem;
+}
+
+.app {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white-keep);
+  color: var(--black-keep);
+  overflow-x: hidden;
+  --white-keep: #fcfcfc;
+  --black-keep: #1b1b1b;
+  --yellow-keet: #f2b807;
+  --light-grey-keep: #eeeded;
+  --dark-grey-keep: #5f6368;
+  min-height: 100vh;
+  animation: lightTransition 500ms ease;
+}
+
+.app__dark {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white-keep);
+  color: var(--black-keep);
+  overflow-x: hidden;
+  --white-keep: #1b1b1b;
+  --black-keep: #ebebeb;
+  --yellow-keet: #f2b807;
+  --light-grey-keep: #5f6368;
+  --dark-grey-keep: #eeeded;
+  transform: all 250ms;
+  min-height: 100vh;
+  animation: darkTransition 500ms;
+}
+
+@keyframes darkTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lightTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--dark-grey-keep);
+}
+
+.app__notesArea {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.app__notesArea__blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  width: 100%;
+  animation: flexTransition 250ms ease;
+}
+
+.note__width__min {
+  width: 18rem;
+  margin: 1rem;
+  animation: flexTransition 300ms ease;
+}
+
+@keyframes flexTransition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.note__width__max {
+  width: 40rem;
+  margin-bottom: 2rem;
+}
+
+.app__body {
+  display: flex;
+}
+
+.app__sidebar {
+  position: fixed;
+  width: 4rem;
+}
+
+.app__sidebar__open {
+  position: sticky;
+  width: 25rem;
+}
+
+.app__sidebar:hover {
+  animation: grow_sidebar 300ms ease-in;
+  width: 20rem;
+}
+
+@keyframes grow_sidebar {
+  0% {
+    width: 4rem;
+  }
+  100% {
+    width: 20rem;
+  }
+}
+
+.app__content {
+  width: 100%;
+  margin: 0 3rem;
+}
+
+.app__inputArea {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 830px) {
+  .app__content {
+    width: 90%;
+    margin: 0 10% 0;
+  }
+
+  .note__width__max {
+    width: 80%;
+  }
+
+  .app__sidebar__open {
+    position: absolute;
+    width: 15rem;
+    top: 3.5rem;
+    left: 0;
+    z-index: 1;
+  }
+
+  .app__sidebar:hover {
+    animation: none;
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .app__content {
+    width: 130%;
+    margin: 0 3rem 0 5rem;
+  }
+}

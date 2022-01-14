@@ -1,0 +1,182 @@
+.header {
+  display: flex;
+  background-color: var(--white-keep);
+  justify-content: space-between;
+  padding: var(--desktop-padding);
+  align-items: center;
+  color: var(--dark-grey-keep);
+  border-bottom: 2px solid var(--light-grey-keep);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.header__left {
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__left .MuiSvgIcon-root {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.keep-logo {
+  display: flex;
+  align-items: center;
+}
+
+.keep-logo img {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+}
+
+.header__left .MuiSvgIcon-root:hover {
+  background-color: var(--light-grey-keep);
+  border-radius: 100%;
+  color: var(--black-keep);
+  box-shadow: 0 0.5px 1px var(--dark-grey-keep);
+  transition: all 150ms ease-in;
+}
+
+.keep-logo {
+  color: var(--yellow-keep);
+}
+
+.header__center {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--light-grey-keep);
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+.header__center .MuiSvgIcon-root {
+  margin-right: 0.7rem;
+}
+
+.header__center input {
+  background-color: var(--light-grey-keep);
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.3rem 0.2rem;
+  outline: none;
+}
+
+.header__center input:-ms-input-placeholder {
+  border: none;
+}
+
+.header__right {
+  flex: 0.1;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.header__right__actions {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.header__right__actions .MuiSvgIcon-root {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.header__right__actions .MuiSvgIcon-root:hover {
+  background-color: var(--light-grey-keep);
+  border-radius: 100%;
+  color: var(--black-keep);
+  box-shadow: 0 0.5px 1px var(--dark-grey-keep);
+  transition: all 150ms ease-in;
+}
+
+.header__right__actions {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.header__right__account {
+  display: flex;
+  align-items: center;
+}
+
+.header__right__account .MuiSvgIcon-root {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.header__right__account .MuiSvgIcon-root:hover {
+  background-color: var(--light-grey-keep);
+  border-radius: 100%;
+  color: var(--black-keep);
+  box-shadow: 0 0.5px 1px var(--dark-grey-keep);
+  transition: all 150ms ease-in;
+}
+
+.header__right__actions > .show_rows_on {
+  display: relative;
+}
+
+.header__right__actions > .show_rows_off {
+  display: none;
+}
+
+.dark_toggle_icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--dark-grey-keep);
+  border: 2px solid var(--dark-grey-keep);
+  height: 1.5rem;
+  border-radius: 15px;
+  width: 3rem;
+  padding: 0 3px;
+}
+
+.header__right__actions > .dark_toggle_icon:hover {
+  background-color: var(--black-keep);
+  transition: all 500ms;
+}
+
+.dark_toggle_icon > .dark_toggle_icon_circle {
+  height: 1.2rem;
+  width: auto;
+  padding: 1px;
+  border: 1.5px solid var(--light-grey-keep);
+  background-color: var(--light-grey-keep);
+  border-radius: 100%;
+  animation: moveIcon 500ms ease;
+  transform: translateX(-5%);
+}
+
+.dark_toggle_icon > .active {
+  transform: translateX(100%);
+  background-color: var(--light-grey-keep);
+  color: var(--dark-grey-keep);
+}
+
+@keyframes moveIcon {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-5%);
+  }
+}

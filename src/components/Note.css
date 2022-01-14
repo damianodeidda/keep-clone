@@ -1,0 +1,52 @@
+.note {
+  background-color: var(--white-keep);
+  padding: 1rem 1rem 0.2rem;
+  border-radius: 10px;
+  border: 3px solid var(--light-grey-keep);
+  float: left;
+  width: 100%;
+  animation: popNote 150ms ease-in-out;
+}
+
+@keyframes popNote {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.note:hover {
+  box-shadow: 0 1px 5px var(--dark-grey-keep);
+  transition: all 250ms ease-in;
+}
+
+.note h2 {
+  padding: 0.7rem 0;
+  color: var(--dark-gray-keep);
+  font-weight: 700;
+}
+
+.note p {
+  padding: 1rem 0;
+}
+
+.note button {
+  background-color: var(--white-keep);
+  border: none;
+  cursor: pointer;
+  float: right;
+  padding: 0.5rem;
+  position: relative;
+  border-radius: 20px;
+  color: var(--black-keep);
+}
+
+.note button:hover {
+  background-color: var(--light-grey-keep);
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0.5px 1px var(--dark-grey-keep);
+  transition: all 150ms ease-in;
+}
