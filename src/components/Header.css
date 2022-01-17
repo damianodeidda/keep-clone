@@ -6,10 +6,13 @@
   align-items: center;
   color: var(--dark-grey-keep);
   border-bottom: 2px solid var(--light-grey-keep);
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 99;
 }
+
+/* HEADER LEFT */
 
 .header__left {
   flex: 0.1;
@@ -48,6 +51,8 @@
   color: var(--yellow-keep);
 }
 
+/* HEADER CENTER */
+
 .header__center {
   flex: 0.5;
   display: flex;
@@ -61,6 +66,17 @@
 @media screen and (max-width: 550px) {
   .header__center {
     display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header__right {
+    display: none;
+  }
+
+  .header__left {
+    flex: 0.3;
+    padding-right: 2rem;
   }
 }
 
@@ -80,6 +96,8 @@
 .header__center input:-ms-input-placeholder {
   border: none;
 }
+
+/* HEADER RIGHT */
 
 .header__right {
   flex: 0.1;
@@ -114,43 +132,6 @@
   display: flex;
   align-items: center;
   padding-right: 1rem;
-}
-
-@media screen and (max-width: 350px) {
-  .header__right__actions {
-    display: none;
-  }
-}
-
-.header__right__account {
-  display: flex;
-  align-items: center;
-}
-
-.header__right__account .MuiSvgIcon-root {
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 350px) {
-  .header__right__actions {
-    display: none;
-  }
-
-  .header__left {
-    flex: 0.3;
-    padding-right: 2rem;
-  }
-}
-
-.header__right__account .MuiSvgIcon-root:hover {
-  background-color: var(--light-grey-keep);
-  border-radius: 100%;
-  color: var(--black-keep);
-  box-shadow: 0 0.5px 1px var(--dark-grey-keep);
-  transition: all 150ms ease-in;
 }
 
 .header__right__actions > .show_rows_on {
@@ -201,5 +182,31 @@
   }
   to {
     transform: translateX(-5%);
+  }
+}
+
+.header__right__account .MuiSvgIcon-root:hover {
+  background-color: var(--light-grey-keep);
+  border-radius: 100%;
+  color: var(--black-keep);
+  box-shadow: 0 0.5px 1px var(--dark-grey-keep);
+  transition: all 150ms ease-in;
+}
+
+.header__right__account {
+  display: flex;
+  align-items: center;
+}
+
+.header__right__account .MuiSvgIcon-root {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .header__right__account {
+    display: none;
   }
 }

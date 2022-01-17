@@ -11,26 +11,32 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import logo from '../img/logo-keep.png'
 import { useState } from 'react';
 import { Tooltip } from '@mui/material';
+import { Link } from 'react-router-dom';
+
+
 
 
 function Header(props) {
 
-
+//Questa sezione è legata alla modifica della disposizione delle note (griglia o lista)
 const [isShowRowActive, setisShowRowActive] = useState(true);
 
-
 const changeFlex = () => {
-
+    //la funzione passa verso App.js
     props.onFlex();
-
-
 }
 
-const openSidebar = () => {
 
+// Funzione che triggera e passa nell'App.js (e modifica la larchezza della sezione dedicata alla sidebar)
+const openSidebar = () => {
+    //la funzione passa verso App.js
     props.onOpen();
 }
 
+
+
+//Sezione di codice che attiva la modalità Dark mode (e che passa sempre su App.js)
+//L'hook UseState viene utilizzato per cambiare lo stato del toggle al momento del click
 const [isDarkMode, setIsDarkMode] = useState(false);
 
 const activateDarkMode = () => {
@@ -77,7 +83,9 @@ const activateDarkMode = () => {
                </div>
                
                <div className='header__right__account'>
+                    <Link to="promemoria"></Link>
                <InfoOutlinedIcon />
+
                <AccountCircleIcon />
                </div>
 

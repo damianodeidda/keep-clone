@@ -7,23 +7,21 @@ function Note(props) {
 
 const handleClick = () => {
 
+//la funzione passa verso App.js
     props.onDelete(props.id);
 }
 
 
-
-
-
-    return (
-        <div className='note note__flexed'>
-            <h2>{props.titolo}</h2>
-            <div className='note__bottom'>
+return (
+    <div className='note note__flexed'>
+        <h2>{props.titolo}</h2>
+        <div className='note__bottom'>
             <p>{props.testo}</p>
             <Tooltip title='Elimina nota'>
             <button onClick={handleClick}><DeleteOutlineIcon/></button>
             </Tooltip>
-            </div>
         </div>
+    </div>
     )
 }
 

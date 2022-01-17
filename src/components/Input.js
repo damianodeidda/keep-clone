@@ -5,6 +5,9 @@ import { useState } from 'react'
 
 function Input(props) {
 
+
+
+//UseState per creare l'oggetto
 const [note, setNote] = useState({
 
     titolo: "",
@@ -12,6 +15,8 @@ const [note, setNote] = useState({
 })
 
 
+//con questa funzione monitoriamo le modifiche in tempo attuale sui due input.
+//La costante viene utilizzata per monitorare entrambi gli input senza dover creare due const separate
 const handleChange = (event) => {
 
   const {name, value} = event.target;
@@ -26,8 +31,11 @@ const handleChange = (event) => {
 
 }
 
-const submitNote = (event) => {
 
+//Funzione che viene triggerata quando si clicca sul tasto aggiungi
+const submitNote = (event) => {
+    
+  //la funzione passa verso App.js
     props.onAdd(note);
 
     setNote({

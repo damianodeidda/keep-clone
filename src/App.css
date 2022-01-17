@@ -17,7 +17,7 @@
   color: var(--black-keep);
   overflow-x: hidden;
   --white-keep: #fcfcfc;
-  --black-keep: #1b1b1b;
+  --black-keep: #1c1c1c;
   --yellow-keet: #f2b807;
   --light-grey-keep: #eeeded;
   --dark-grey-keep: #5f6368;
@@ -107,10 +107,12 @@ h2 {
 
 .app__body {
   display: flex;
+  margin-top: 4rem;
 }
 
 .app__sidebar {
   position: fixed;
+  margin-top: 0.5rem;
   width: 4rem;
 }
 
@@ -135,7 +137,7 @@ h2 {
 
 .app__content {
   width: 100%;
-  margin: 0 3rem;
+  margin: 1rem 3rem 0;
 }
 
 .app__inputArea {
@@ -147,7 +149,7 @@ h2 {
 @media screen and (max-width: 830px) {
   .app__content {
     width: 100%;
-    margin: 0 5% 0;
+    margin: 0.5rem 5% 0;
   }
 
   .note__width__max {
@@ -157,7 +159,7 @@ h2 {
   .app__sidebar__open {
     position: absolute;
     width: 15rem;
-    top: 3.5rem;
+    top: 4rem;
     left: 0;
     z-index: 1;
   }

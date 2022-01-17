@@ -1,0 +1,29 @@
+.cestino {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 3rem;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.cestino .MuiSvgIcon-root {
+  width: 7rem;
+  height: auto;
+  margin-bottom: 3rem;
+  color: var(--dark-grey-keep);
+}
+
+.cestino h3 {
+  margin-top: 6rem;
+  color: var(--dark-grey-keep);
+}
+
+@media screen and (max-width: 830px) {
+  .cestino {
+    width: 100%;
+    margin: 0 5% 0;
+    text-align: center;
+  }
+}

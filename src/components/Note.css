@@ -6,6 +6,7 @@
   float: left;
   width: 100%;
   animation: popNote 150ms ease-in-out;
+  z-index: -1;
 }
 
 @keyframes popNote {

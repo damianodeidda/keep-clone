@@ -1,11 +1,11 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  margin: 0rem 1.2rem 0 0;
+  margin: 0rem 3rem 0 0;
   background-color: var(--white-keep);
   border-right: 2px solid var(--light-grey-keep);
   height: 90vh;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   width: 100%;
   min-width: 4rem;
   overflow: hidden;
@@ -15,16 +15,17 @@
   width: 2.5rem;
   height: 2.5rem;
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
   position: sticky;
   left: 1rem;
+  color: var(--black-keep);
 }
 
 .sidebar__item {
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0rem 1rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .sidebar__item:hover {
@@ -35,7 +36,14 @@
 }
 
 .sidebar__item p {
-  display: block;
   font-weight: 700;
   padding-left: 1rem;
+  color: var(--black-keep);
+  text-decoration: none;
+}
+
+a {
+  margin-bottom: 1rem;
+  padding: 0;
+  text-decoration: none;
 }
