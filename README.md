@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Keep Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Questo progetto è stato creato utilizzando la libreria React App [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+È possibile vedere il progetto cliccando al link: https://keep-clone-portfolio.herokuapp.com/
 
-In the project directory, you can run:
+Poiché si trata di un progetto esclusivamente Frontend, è possibile fare dei test inserendo le note ed eliminandole.
 
-### `npm start`
+## Il progetto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Il progetto è un clone dell'app Keeper di Google, ovvero lo strumento per prendere note e appunti in modo rapido.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ho scelto questo progetto per il mio portfolio perché si tratta di un progetto relativamente semplice (ho inserito alcune funzionalità base), ma allo stesso tempo mi ha dato la pssibilità di studiare nel dettaglio la struttura di un prodotto creato da Google, sia per quel che riguarda le componenti (Header, Sidebar, Icone e microinterazioni), sia per quel che riguarda le funzionalità e la relazione tra le varie parti dell'App, riflettendo sull'interfaccia utente.
 
-### `npm test`
+Gli obiettivi del progetto sono stati:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Riprodurre l'app focalizzandomi principalmente sulle intefacce sia dal lato Desktop sia Mobile;
+- Inserire la funzionalità aggiungi Nota / Elimina nota;
+- Scrivere un codice semplice ed essenziale attrerso l'utilizzo di variabili, components ed evitando le ripetizioni. Inoltre ho voluto focalizzarmi su un codice facilmente gestibile e scalabile attraverso l'utilizzo dei commenti;
+- Studiare la UI e le microinterazioni di un prodotto Google e cercare di riprodurle;
 
-### `npm run build`
+## Gli strumenti
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ho sviluppato l'interfaccia utilizzando **React**, **React Router-Dom**, **CSS** e la **libreria Material UI**. Ho caricato il codile del progetto sul mio account GitHub e l'app su Heroku.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Il codice
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Il codice di questo progetto si suddivide nel file **App.js**, dove all'interno sono presenti i children e i relativi file css:
 
-### `npm run eject`
+- Header
+- Input
+- Note
+- Sidebar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Inoltre sono presenti le directories legate alle voci della sidebar (Promemoria,
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ho deciso di non creare un albero delle componenti troppo complicato, in modo da rendere il codice il più essenziale possibile e da far passare le varie funzioni tra i componenti in modo semplice.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ho inoltre utilizzato il pacchetto **React-Router-DOM**, che permette di creare delle directories in modo rapido e dinamico. Il pacchetto è stato utilizzato principalmente per cambiare le pagine dalla sidebar, nonostante queste siano statiche poiché si tratta di un progetto esclusivamente Frontend.
