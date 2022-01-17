@@ -6,12 +6,11 @@ import RefreshIcon from '@mui/icons-material/Refresh';
 import ViewAgendaOutlinedIcon from '@mui/icons-material/ViewAgendaOutlined';
 import GridViewIcon from '@mui/icons-material/GridView';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import logo from '../img/logo-keep.png'
 import { useState } from 'react';
 import { Tooltip } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { GitHub } from '@mui/icons-material';
 
 
 
@@ -83,11 +82,19 @@ const activateDarkMode = () => {
                </div>
                
                <div className='header__right__account'>
-                    <Link to="promemoria"></Link>
-               <InfoOutlinedIcon />
+                <Tooltip title='GitHub'>
+               <a href="https://github.com/damianodeidda/keep-clone" target="_blank" rel="noopener noreferrer">
+               < GitHub/>
+               </a>
+               </Tooltip>
 
+                <Tooltip title='deiddam.it'>
+               <a href="https://deiddam.it" target="_blank" rel="noopener noreferrer">
                <AccountCircleIcon />
+               </a>
+               </Tooltip>
                </div>
+               
 
             </div>
         </div>

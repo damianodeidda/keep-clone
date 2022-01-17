@@ -203,6 +203,12 @@
   height: 2.5rem;
   padding: 0.5rem;
   cursor: pointer;
+  align-items: center;
+}
+
+.header__right__account a {
+  margin: 0;
+  color: var(--dark-grey-keep);
 }
 
 @media screen and (max-width: 550px) {
