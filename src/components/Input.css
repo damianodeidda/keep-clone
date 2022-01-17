@@ -53,11 +53,15 @@ form :-ms-input-placeholder {
 @media (max-width: 570px) {
   form input,
   form textarea {
-    width: 20rem;
+    width: 12.5rem;
+  }
+
+  form textarea {
+    height: 9rem;
   }
 
   form {
-    width: 22rem;
+    width: 13.5rem;
   }
 }
 

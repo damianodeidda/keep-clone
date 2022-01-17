@@ -58,6 +58,12 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .header__center {
+    display: none;
+  }
+}
+
 .header__center .MuiSvgIcon-root {
   margin-right: 0.7rem;
 }
@@ -110,6 +116,12 @@
   padding-right: 1rem;
 }
 
+@media screen and (max-width: 350px) {
+  .header__right__actions {
+    display: none;
+  }
+}
+
 .header__right__account {
   display: flex;
   align-items: center;
@@ -120,6 +132,17 @@
   height: 2.5rem;
   padding: 0.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 350px) {
+  .header__right__actions {
+    display: none;
+  }
+
+  .header__left {
+    flex: 0.3;
+    padding-right: 2rem;
+  }
 }
 
 .header__right__account .MuiSvgIcon-root:hover {

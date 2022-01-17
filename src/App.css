@@ -146,8 +146,8 @@ h2 {
 
 @media screen and (max-width: 830px) {
   .app__content {
-    width: 90%;
-    margin: 0 10% 0;
+    width: 100%;
+    margin: 0 5% 0;
   }
 
   .note__width__max {
@@ -170,7 +170,11 @@ h2 {
 
 @media screen and (max-width: 580px) {
   .app__content {
-    width: 130%;
+    width: 70%;
     margin: 0 3rem 0 5rem;
+  }
+
+  .app__notesArea {
+    margin: 0rem;
   }
 }
