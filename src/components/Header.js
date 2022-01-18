@@ -7,10 +7,11 @@ import ViewAgendaOutlinedIcon from '@mui/icons-material/ViewAgendaOutlined';
 import GridViewIcon from '@mui/icons-material/GridView';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import logo from '../img/logo-keep.png'
 import { useState } from 'react';
 import { Tooltip } from '@mui/material';
-import { GitHub } from '@mui/icons-material';
+
 
 
 
@@ -81,19 +82,14 @@ const activateDarkMode = () => {
                </Tooltip>
                </div>
                
+            
                <div className='header__right__account'>
-                <Tooltip title='GitHub'>
-               <a href="https://github.com/damianodeidda/keep-clone" target="_blank" rel="noopener noreferrer">
-               < GitHub/>
-               </a>
-               </Tooltip>
+    
+               <InfoOutlinedIcon />
 
-                <Tooltip title='deiddam.it'>
-               <a href="https://deiddam.it" target="_blank" rel="noopener noreferrer">
                <AccountCircleIcon />
-               </a>
-               </Tooltip>
                </div>
+            
                
 
             </div>
