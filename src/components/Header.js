@@ -13,9 +13,6 @@ import { useState } from 'react';
 import { Tooltip } from '@mui/material';
 
 
-
-
-
 function Header(props) {
 
 //Questa sezione è legata alla modifica della disposizione delle note (griglia o lista)
