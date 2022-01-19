@@ -203,6 +203,7 @@
   height: 2.5rem;
   padding: 0.5rem;
   cursor: pointer;
+  align-items: center;
 }
 
 @media screen and (max-width: 550px) {

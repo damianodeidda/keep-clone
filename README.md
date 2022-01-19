@@ -32,11 +32,9 @@ Il codice di questo progetto si suddivide nel file **App.js**, dove all'interno 
 - Note
 - Sidebar
 
+
 Inoltre sono presenti le directories legate alle voci della sidebar (Promemoria, 
 
 Ho deciso di non creare un albero delle componenti troppo complicato, in modo da rendere il codice il più essenziale possibile e da far passare le varie funzioni tra i componenti in modo semplice.
 
 Ho inoltre utilizzato il pacchetto **React-Router-DOM**, che permette di creare delle directories in modo rapido e dinamico. Il pacchetto è stato utilizzato principalmente per cambiare le pagine dalla sidebar, nonostante queste siano statiche poiché si tratta di un progetto esclusivamente Frontend.
-
-
-

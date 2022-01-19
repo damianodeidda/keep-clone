@@ -6,14 +6,11 @@ import RefreshIcon from '@mui/icons-material/Refresh';
 import ViewAgendaOutlinedIcon from '@mui/icons-material/ViewAgendaOutlined';
 import GridViewIcon from '@mui/icons-material/GridView';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import logo from '../img/logo-keep.png'
 import { useState } from 'react';
 import { Tooltip } from '@mui/material';
-import { Link } from 'react-router-dom';
-
-
 
 
 function Header(props) {
@@ -82,12 +79,15 @@ const activateDarkMode = () => {
                </Tooltip>
                </div>
                
+            
                <div className='header__right__account'>
-                    <Link to="promemoria"></Link>
+    
                <InfoOutlinedIcon />
 
                <AccountCircleIcon />
                </div>
+            
+               
 
             </div>
         </div>
