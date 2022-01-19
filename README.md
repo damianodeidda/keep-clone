@@ -32,7 +32,8 @@ Il codice di questo progetto si suddivide nel file **App.js**, dove all'interno 
 - Note
 - Sidebar
 
-Inoltre sono presenti le directories legate alle voci della sidebar (Promemoria,
+
+Inoltre sono presenti le directories legate alle voci della sidebar (Promemoria, 
 
 Ho deciso di non creare un albero delle componenti troppo complicato, in modo da rendere il codice il più essenziale possibile e da far passare le varie funzioni tra i componenti in modo semplice.
 
